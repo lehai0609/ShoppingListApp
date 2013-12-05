@@ -1,0 +1,13 @@
+#shoppingList {
+	border: solid;
+	border-width: thin;
+	border-radius: 10px;
+}
+
+div#shoppingList .item{
+	display: block;
+}
+
+.selected{
+	background-color: black;
+}
