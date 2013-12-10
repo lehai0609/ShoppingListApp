@@ -11,18 +11,22 @@
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <center>
+    <div align="center">
       <h1>Shopping List</h1>
     <!--Input form-->
-      <FORM name="itemInput" onsubmit="addItem()">
+      <FORM name="itemInput" onsubmit="return checkInput()">
+        <label>Item</label>
         <input type="text" name="item">
+        <label>Amount</label>
+        <input type="text" name="amount">    
         <button>Submit</button>
       </FORM>
       <h3>Date:<input type="text" id="datepicker"></h3>
     <!--The list-->
       
-    </center>
+    </div>
     <!--The Item-->
-      
+    <div class="shoppingList">
+    </div>
   </body>
 </html>
