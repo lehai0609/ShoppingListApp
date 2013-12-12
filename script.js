@@ -6,9 +6,9 @@ $(function() {
 	});
 });
 
-$(document).on("change", "input[type='checkbox']", removeItem);
+$(document).on("change", $("input[type='checkbox']"), removeItem());
 
-function checkInput() {
+function checkInput(event) {
 	event.preventDefault();
 	var x = document.itemInput.item.value;
 	var y = document.itemInput.amount.value;
